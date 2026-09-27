@@ -139,7 +139,6 @@ function pantallaEjemplo() {
       <p class="etiqueta-progreso">
         ${NOMBRE_FASE[estado.faseActual]} — pregunta ${estado.posicionEnSecuencia} de ${estado.totalEnFase}
       </p>
-      <p class="etiqueta-ejemplo">Ejemplo de la relación "${item.relacion}"</p>
       <div class="par-ejemplo">
         <span class="chip">${item.ejemploSelector1 ?? "—"}</span>
         <span class="conector">↔</span>
@@ -168,7 +167,6 @@ function pantallaPregunta() {
       <p class="etiqueta-progreso">
         ${NOMBRE_FASE[estado.faseActual]} — pregunta ${estado.posicionEnSecuencia} de ${estado.totalEnFase}
       </p>
-      <p class="etiqueta-muestra">Muestra</p>
       <p class="texto-muestra">${item.muestra}</p>
       <div class="grid-opciones">
         ${opcionesHtml}
