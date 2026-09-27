@@ -13,15 +13,30 @@ let participantesCache = [];
 
 async function cargarPanel() {
   try {
-    const [{ participantes }, desglose, comparacion] = await Promise.all([
+    const [lista, desglose, comparacion] = await Promise.all([
       api.obtenerListaParticipantesAdmin(),
       api.obtenerDesgloseGeneralAdmin(),
       api.obtenerComparacionGruposAdmin(),
     ]);
+
+    console.log("LISTA PARTICIPANTES:", lista);
+    console.log("DESGLOSE:", desglose);
+    console.log("COMPARACION:", comparacion);
+
+    const { participantes } = lista;
+
     participantesCache = participantes;
     renderPanel(participantes, desglose, comparacion.grupos);
+
   } catch (err) {
-    raiz.innerHTML = `<p class="admin-error">No se pudo cargar el panel: ${err.message}</p>`;
+    console.error("ERROR COMPLETO DEL PANEL:", err);
+    console.error("STACK:", err.stack);
+
+    raiz.innerHTML = `
+      <p class="admin-error">
+        No se pudo cargar el panel: ${err.message}
+      </p>
+    `;
   }
 }
 
