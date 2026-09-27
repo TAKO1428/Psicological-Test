@@ -37,6 +37,7 @@ router.get("/participantes", async (req, res) => {
       return {
         id: p.id,
         codigoEncuestado: p.codigo_encuestado,
+        grupoEntrenamiento: p.grupo_entrenamiento,
         estado: p.estado,
         faseActual: p.fase_actual,
         creadoEn: p.creado_en,
@@ -117,6 +118,42 @@ router.get("/desglose-general", async (req, res) => {
 });
 
 /**
+ * GET /api/admin/comparacion-grupos
+ *
+ * ESTA ES LA MÉTRICA CLAVE DEL OBJETIVO DEL ESTUDIO: compara los 3 grupos
+ * de entrenamiento (imágenes / palabra / definición) en cuanto a su
+ * ganancia promedio pre->post, para responder "qué entrenamiento funciona
+ * mejor". Usa la vista `comparacion_grupos_entrenamiento`.
+ */
+router.get("/comparacion-grupos", async (req, res) => {
+  try {
+    const { data: comparacion, error } = await supabase
+      .from("comparacion_grupos_entrenamiento")
+      .select("*")
+      .order("ganancia_promedio", { ascending: false });
+
+    if (error) throw error;
+
+    // detalle individual de cada participante con su grupo y ganancia,
+    // útil para graficar dispersión o revisar casos atípicos
+    const { data: porParticipante, error: errDetalle } = await supabase
+      .from("ganancia_por_participante")
+      .select("*")
+      .order("grupo_entrenamiento", { ascending: true });
+
+    if (errDetalle) throw errDetalle;
+
+    res.json({
+      comparacionGrupos: comparacion,
+      detallePorParticipante: porParticipante,
+    });
+  } catch (err) {
+    console.error("Error obteniendo comparación de grupos:", err);
+    res.status(500).json({ error: "No se pudo obtener la comparación de grupos." });
+  }
+});
+
+/**
  * GET /api/admin/exportar-csv
  * Exporta todos los ensayos en formato CSV para análisis externo (SPSS/R/Excel).
  */
@@ -124,16 +161,20 @@ router.get("/exportar-csv", async (req, res) => {
   try {
     const { data: ensayos, error } = await supabase
       .from("ensayos")
-      .select("*, participantes(codigo_encuestado), items(relacion, muestra)")
+      .select(
+        "*, participantes(codigo_encuestado, grupo_entrenamiento), items(relacion, muestra, tipo_contenido)"
+      )
       .order("participante_id", { ascending: true });
 
     if (error) throw error;
 
     const encabezados = [
       "codigo_encuestado",
+      "grupo_entrenamiento",
       "fase",
       "relacion",
       "muestra",
+      "tipo_contenido",
       "posicion_en_secuencia",
       "indice_correcto_mostrado",
       "indice_respondido",
@@ -145,9 +186,11 @@ router.get("/exportar-csv", async (req, res) => {
     const filas = ensayos.map((e) =>
       [
         e.participantes?.codigo_encuestado ?? "",
+        e.participantes?.grupo_entrenamiento ?? "",
         e.fase,
         e.items?.relacion ?? "",
         `"${(e.items?.muestra ?? "").replace(/"/g, '""')}"`,
+        e.items?.tipo_contenido ?? "",
         e.posicion_en_secuencia,
         e.indice_correcto_mostrado,
         e.indice_respondido,
