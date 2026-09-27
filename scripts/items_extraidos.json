@@ -1,0 +1,1968 @@
+{
+  "items": [
+    {
+      "fila_excel": 2,
+      "fase": "preprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "negro",
+      "ejemplo_selector_2": "obscuro",
+      "muestra": "iluminacion",
+      "ecos": [
+        "foco",
+        "alumbrado",
+        "ventana",
+        "faro"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 3,
+      "fase": "preprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "pantalla",
+      "ejemplo_selector_2": "monitor",
+      "muestra": "rojo",
+      "ecos": [
+        "escarlata",
+        "rosa",
+        "manzana",
+        "blanca"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 4,
+      "fase": "preprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "cuaderno",
+      "ejemplo_selector_2": "libreta",
+      "muestra": "puerta",
+      "ecos": [
+        "proyector",
+        "cierre",
+        "cinturón",
+        "portilla"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 5,
+      "fase": "preprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "banco",
+      "ejemplo_selector_2": "silla",
+      "muestra": "tablero",
+      "ecos": [
+        "tablet",
+        "mesa",
+        "pizarrón",
+        "llavero"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 6,
+      "fase": "preprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "voltáico",
+      "ejemplo_selector_2": "electrógeno",
+      "muestra": "audaz",
+      "ecos": [
+        "feliz",
+        "osado",
+        "fauto",
+        "deseado"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 7,
+      "fase": "preprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "efímero",
+      "ejemplo_selector_2": "duradero",
+      "muestra": "benévolo",
+      "ecos": [
+        "bueno",
+        "hostil",
+        "amable",
+        "hueso"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 8,
+      "fase": "preprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "luminoso",
+      "ejemplo_selector_2": "negro",
+      "muestra": "prudente",
+      "ecos": [
+        "bueno",
+        "manejar",
+        "aventar",
+        "insesato"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 9,
+      "fase": "preprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "lacónico",
+      "ejemplo_selector_2": "extenso",
+      "muestra": "individual",
+      "ecos": [
+        "humano",
+        "equipo",
+        "perro",
+        "insecto"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 10,
+      "fase": "preprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "animar",
+      "ejemplo_selector_2": "desalentar",
+      "muestra": "innato",
+      "ecos": [
+        "pantalla",
+        "programado",
+        "adquirido",
+        "azul"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 11,
+      "fase": "preprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "honesto",
+      "ejemplo_selector_2": "mentiroso",
+      "muestra": "estulto",
+      "ecos": [
+        "astuto",
+        "rencoroso",
+        "transparente",
+        "avaricioso"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 12,
+      "fase": "preprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "muñeca",
+      "ejemplo_selector_2": "reloj",
+      "muestra": "laptop",
+      "ecos": [
+        "poster",
+        "pantalla",
+        "lapíz",
+        "ventana"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 13,
+      "fase": "preprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "control",
+      "ejemplo_selector_2": "TV",
+      "muestra": "llanta",
+      "ecos": [
+        "cámara",
+        "carro",
+        "uva",
+        "moneda"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 14,
+      "fase": "preprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "cámara",
+      "ejemplo_selector_2": "fotografía",
+      "muestra": "ventana",
+      "ecos": [
+        "mano",
+        "mochila",
+        "cortina",
+        "metal"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 15,
+      "fase": "preprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "funda",
+      "ejemplo_selector_2": "telefono",
+      "muestra": "lapíz",
+      "ecos": [
+        "cuaderno",
+        "foco",
+        "luz",
+        "prueba"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 16,
+      "fase": "preprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "ojos",
+      "ejemplo_selector_2": "lentes",
+      "muestra": "azul",
+      "ecos": [
+        "plumón",
+        "mar",
+        "canela",
+        "cemento"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 17,
+      "fase": "preprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "pizarrón",
+      "ejemplo_selector_2": "plato",
+      "muestra": "cama",
+      "ecos": [
+        "almohada",
+        "cobija",
+        "piedra",
+        "colchón"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 18,
+      "fase": "preprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "cable",
+      "ejemplo_selector_2": "agua",
+      "muestra": "audífono",
+      "ecos": [
+        "oreja",
+        "volumen",
+        "pie",
+        "teléfono"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 19,
+      "fase": "preprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "teclado",
+      "ejemplo_selector_2": "playera",
+      "muestra": "pantalón",
+      "ecos": [
+        "sudadera",
+        "patines",
+        "pants",
+        "bermuda"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 20,
+      "fase": "preprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "agua",
+      "ejemplo_selector_2": "aceite",
+      "muestra": "agua",
+      "ecos": [
+        "vaso",
+        "cable",
+        "electricidad",
+        "sombrero"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 21,
+      "fase": "preprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "arroz",
+      "ejemplo_selector_2": "pluma",
+      "muestra": "número",
+      "ecos": [
+        "estadística",
+        "suma",
+        "multiplicación",
+        "pared"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 22,
+      "fase": "preprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "lila",
+      "ejemplo_selector_2": "morado",
+      "muestra": "marrón",
+      "ecos": [
+        "amarillo",
+        "verde",
+        "café",
+        "coral"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 23,
+      "fase": "preprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "hueso",
+      "ejemplo_selector_2": "crema",
+      "muestra": "turquesa",
+      "ecos": [
+        "negro",
+        "morado",
+        "verde",
+        "azul cielo"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 24,
+      "fase": "preprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "latón",
+      "ejemplo_selector_2": "oro",
+      "muestra": "gris",
+      "ecos": [
+        "plata",
+        "rosa",
+        "rojo",
+        "celeste"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 25,
+      "fase": "preprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "arena",
+      "ejemplo_selector_2": "gris",
+      "muestra": "vino",
+      "ecos": [
+        "naranja",
+        "berenjena",
+        "blanco",
+        "cian"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 26,
+      "fase": "preprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "blanco",
+      "ejemplo_selector_2": "marfil",
+      "muestra": "negro",
+      "ecos": [
+        "rojo",
+        "oliva",
+        "morado",
+        "alquitrán"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 27,
+      "fase": "preprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "anillo",
+      "ejemplo_selector_2": "moneda",
+      "muestra": "clavo",
+      "ecos": [
+        "playera",
+        "chicle",
+        "piso",
+        "pizarrón"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 28,
+      "fase": "preprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "encendedor",
+      "ejemplo_selector_2": "llave",
+      "muestra": "hoja",
+      "ecos": [
+        "silla",
+        "llanta",
+        "laptop",
+        "mesa"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 29,
+      "fase": "preprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "foco",
+      "ejemplo_selector_2": "pelota de tenis",
+      "muestra": "mouse",
+      "ecos": [
+        "zapato",
+        "mochila",
+        "lapíz",
+        "hamster"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 30,
+      "fase": "preprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "balón",
+      "ejemplo_selector_2": "cabeza",
+      "muestra": "cursor",
+      "ecos": [
+        "carro",
+        "laptop",
+        "teléfono",
+        "pimienta"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 31,
+      "fase": "preprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "clip",
+      "ejemplo_selector_2": "tornillo",
+      "muestra": "popote",
+      "ecos": [
+        "lapíz",
+        "vaso",
+        "gorra",
+        "pulsera"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 32,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Foco",
+      "ejemplo_selector_2": "Bombilla",
+      "muestra": "Zapato",
+      "ecos": [
+        "Cinturón",
+        "Calzado",
+        "Pie",
+        "Calcetas"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 33,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Regalo",
+      "ejemplo_selector_2": "Presente",
+      "muestra": "Lazo",
+      "ecos": [
+        "Tela",
+        "Aguja",
+        "Cuerda",
+        "Pastel"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 34,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Carro",
+      "ejemplo_selector_2": "Automóvil",
+      "muestra": "Silla",
+      "ecos": [
+        "Asiento",
+        "Pantalón",
+        "Cocina",
+        "Cortina"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 35,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Teléfono",
+      "ejemplo_selector_2": "Celular",
+      "muestra": "Pecera",
+      "ecos": [
+        "Mar",
+        "Pez",
+        "Algas",
+        "Acuario"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 36,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Refresco",
+      "ejemplo_selector_2": "Gaseosa",
+      "muestra": "Alberca",
+      "ecos": [
+        "Camión",
+        "Montaña",
+        "Piscina",
+        "Lluvia"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 37,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Aviso",
+      "ejemplo_selector_2": "Anuncio",
+      "muestra": "Rueda",
+      "ecos": [
+        "Puerta",
+        "Llanta",
+        "Caballo",
+        "Carro"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 38,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Plátano",
+      "ejemplo_selector_2": "Banana",
+      "muestra": "Tren",
+      "ecos": [
+        "Vías",
+        "Chofer",
+        "Ferrocarril",
+        "Luces"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 39,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Lapicera",
+      "ejemplo_selector_2": "Estuchera",
+      "muestra": "Lluvia",
+      "ecos": [
+        "Llovizna",
+        "Tornado",
+        "Lago",
+        "Hoja"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 40,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Saltar",
+      "ejemplo_selector_2": "Brincar",
+      "muestra": "Margen",
+      "ecos": [
+        "Letras",
+        "Contorno",
+        "Fotografía",
+        "Tinta"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 41,
+      "fase": "entrenamiento",
+      "relacion": "semejanza",
+      "ejemplo_selector_1": "Cuaderno",
+      "ejemplo_selector_2": "Libreta",
+      "muestra": "Pluma",
+      "ecos": [
+        "Lapiz",
+        "Bolígrafo",
+        "Goma",
+        "Sacapuntas"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 42,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Riqueza",
+      "ejemplo_selector_2": "Pobreza",
+      "muestra": "Dormir",
+      "ecos": [
+        "Cobija",
+        "Beber",
+        "Despertar",
+        "Almohada"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 43,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Calor",
+      "ejemplo_selector_2": "Frío",
+      "muestra": "Bueno",
+      "ecos": [
+        "Malo",
+        "Robar",
+        "Fuego",
+        "Agua"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 44,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Salud",
+      "ejemplo_selector_2": "Enfermedad",
+      "muestra": "Dia",
+      "ecos": [
+        "Obcuro",
+        "Noche",
+        "Sol",
+        "Estrella"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 45,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Izquierda",
+      "ejemplo_selector_2": "Derecha",
+      "muestra": "Rápido",
+      "ecos": [
+        "Veloz",
+        "Ferrari",
+        "Ineficiente",
+        "Lento"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 46,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Luz",
+      "ejemplo_selector_2": "Oscuridad",
+      "muestra": "Viejo",
+      "ecos": [
+        "Adolescente",
+        "Niño",
+        "Adulto",
+        "Joven"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 47,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Dulce",
+      "ejemplo_selector_2": "Salado",
+      "muestra": "Curvo",
+      "ecos": [
+        "Plano",
+        "Obtuso",
+        "Redondo",
+        "Cuadrado"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 48,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Grande",
+      "ejemplo_selector_2": "Pequeño",
+      "muestra": "Vida",
+      "ecos": [
+        "Germinar",
+        "Muerte",
+        "Wall-e",
+        "Eva"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 49,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Lleno",
+      "ejemplo_selector_2": "Vacío",
+      "muestra": "Vender",
+      "ecos": [
+        "Producto",
+        "Comprar",
+        "Precio",
+        "Dinero"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 50,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Suelto",
+      "ejemplo_selector_2": "Apretado",
+      "muestra": "Feliz",
+      "ecos": [
+        "Sorprendido",
+        "Incómodo",
+        "Asustado",
+        "Triste"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 51,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Blanco",
+      "ejemplo_selector_2": "Negro",
+      "muestra": "Amarillo",
+      "ecos": [
+        "Sol",
+        "Verde",
+        "Morado",
+        "Blanco"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 52,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Cerradura",
+      "ejemplo_selector_2": "Llave",
+      "muestra": "Teléfono",
+      "ecos": [
+        "Peluche",
+        "Anillo",
+        "Audífonos",
+        "Cartera"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 53,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Fiesta",
+      "ejemplo_selector_2": "Pastel",
+      "muestra": "Escuela",
+      "ecos": [
+        "Salones",
+        "Iglesia",
+        "Combi",
+        "Comida"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 54,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Jauría",
+      "ejemplo_selector_2": "Perro",
+      "muestra": "Cardumen",
+      "ecos": [
+        "Medusa",
+        "Granja",
+        "oveja",
+        "Pez"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 55,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Rebaño",
+      "ejemplo_selector_2": "Oveja",
+      "muestra": "Gente",
+      "ecos": [
+        "Persona",
+        "Sociedad",
+        "Comunidad",
+        "Organización"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 56,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Ventana",
+      "ejemplo_selector_2": "Edificio",
+      "muestra": "Cráter",
+      "ecos": [
+        "Volcán",
+        "Montaña",
+        "Agujero",
+        "Fuego"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 57,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Estufa",
+      "ejemplo_selector_2": "Cocina",
+      "muestra": "Chimenea",
+      "ecos": [
+        "Casa",
+        "Balcón",
+        "Tapete",
+        "Leña"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 58,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Jardín",
+      "ejemplo_selector_2": "Árbol",
+      "muestra": "Iglesia",
+      "ecos": [
+        "Cura",
+        "Campanario",
+        "Biblia",
+        "Estacionamiento"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 59,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Albañil",
+      "ejemplo_selector_2": "Construcción",
+      "muestra": "Compositor",
+      "ecos": [
+        "Banda",
+        "Escenario",
+        "Actor",
+        "Música"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 60,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Gato",
+      "ejemplo_selector_2": "Felino",
+      "muestra": "Lobo",
+      "ecos": [
+        "Perro",
+        "Canino",
+        "Carnívoro",
+        "Cuadrúpedo"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 61,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Nubes",
+      "ejemplo_selector_2": "Cielo",
+      "muestra": "Estrellas",
+      "ecos": [
+        "Luna",
+        "Nebulosa",
+        "Universo",
+        "Planeta"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 62,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "dispositivo que se conecta a la corriente para emitir luz",
+      "ejemplo_selector_2": "dispositivo de cristal con un filamento interior que produce luz al precibir la electricidad*",
+      "muestra": "zapato",
+      "ecos": [
+        "cinturon",
+        "calzado",
+        "pie",
+        "calcetas"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 63,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "Objeto que se da a alguien voluntariamente como muestra de afecto o atención.",
+      "ejemplo_selector_2": "Objeto o detalle entregado a una persona sin esperar pago a cambio.",
+      "muestra": "lazo",
+      "ecos": [
+        "tela",
+        "aguja",
+        "cuerda",
+        "pastel"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 64,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "Vehículo con ruedas utilizado para el transporte de personas o cosas",
+      "ejemplo_selector_2": "Vehículo motorizado de cuatro ruedas diseñado para circular por carreteras.",
+      "muestra": "silla",
+      "ecos": [
+        "asiento",
+        "pantalon",
+        "cocina",
+        "cortina"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 65,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "Aparato que transmite sonidos y voz a distancia mediante señales eléctricas.",
+      "ejemplo_selector_2": "Dispositivo electrónico inalámbrico para comunicación móvil y acceso a redes.",
+      "muestra": "pecera",
+      "ecos": [
+        "Mar",
+        "Pez",
+        "Algas",
+        "Acuario"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 66,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "Bebida fría preparada para calmar la sed.",
+      "ejemplo_selector_2": "Bebida efervescente no alcohólica con gas carbónico y saborizantes.",
+      "muestra": "alberca",
+      "ecos": [
+        "Camión",
+        "Montaña",
+        "Piscina",
+        "Lluvia"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 67,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "Señal, escrito o nota con que se comunica o advierte algo.",
+      "ejemplo_selector_2": "Conjunto de palabras o imágenes publicadas para divulgar una noticia o producto.",
+      "muestra": "rueda",
+      "ecos": [
+        "Puerta",
+        "Llanta",
+        "Caballo",
+        "Carro"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 68,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "Planta y fruto de la familia de las musáceas.",
+      "ejemplo_selector_2": "Fruta comestible alargada de cáscara amarilla y pulpa blanda",
+      "muestra": "tren",
+      "ecos": [
+        "Vías",
+        "Chofer",
+        "Ferrocarril",
+        "Luces"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 69,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "Utensilio para guardar o colocar lápices y plumas.",
+      "ejemplo_selector_2": "Funda o contenedor pequeño para transportar artículos de escritura y papelería.",
+      "muestra": "lluvia",
+      "ecos": [
+        "Llovizna",
+        "Tornado",
+        "Lago",
+        "Hoja"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 70,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "Levantarse del suelo con vuelo a través del propio impulso.",
+      "ejemplo_selector_2": "Dar saltos o elevaciones rápidas y repetidas apoyándose en las piernas.",
+      "muestra": "margen",
+      "ecos": [
+        "Letras",
+        "Contorno",
+        "Fotografía",
+        "Tinta"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 71,
+      "fase": "entrenamiento",
+      "relacion": "semejantes",
+      "ejemplo_selector_1": "Conjunto de pliegos de papel cosidos o encuadernados.",
+      "ejemplo_selector_2": "Cuaderno de tamaño pequeño o mediano utilizado para tomar notas rápidas",
+      "muestra": "pluma",
+      "ecos": [
+        "Lapiz",
+        "Bolígrafo",
+        "Goma",
+        "Sacapuntas"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 72,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Abundancia de bienes y cosas preciosas.",
+      "ejemplo_selector_2": "Falta, escasez.",
+      "muestra": "dormido",
+      "ecos": [
+        "Cobija",
+        "Beber",
+        "Despierto",
+        "Almohada"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 74,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "estado de completo bienestar físico, mental y social, y no solamente la ausencia de afecciones o enfermedades",
+      "ejemplo_selector_2": "alteración significativa en el estado de bienestar y  salud",
+      "muestra": "Dia",
+      "ecos": [
+        "Obcuro",
+        "Noche",
+        "Sol",
+        "Estrella"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 75,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "lado del cuerpo donde se encuentra el corazon",
+      "ejemplo_selector_2": "lado contrario al lado donde se encuentra el corazon",
+      "muestra": "Rápido",
+      "ecos": [
+        "Veloz",
+        "Ferrari",
+        "Ineficiente",
+        "Lento"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 76,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Agente físico que hace visibles los objetos.",
+      "ejemplo_selector_2": "La oscuridad es la carencia de luz, ya sea de forma total o parcial, que impide una visión clara.",
+      "muestra": "viejo",
+      "ecos": [
+        "Adolescente",
+        "niño",
+        "adulto",
+        "Joven"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 77,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "sabores que se caracteriza por su gusto azucarado y placentero.",
+      "ejemplo_selector_2": "sabor característico que tiene la sal",
+      "muestra": "curvo",
+      "ecos": [
+        "plano",
+        "obtuso",
+        "redondo",
+        "cuadrado"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 78,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "Que supera en tamaño, importancia",
+      "ejemplo_selector_2": "Que tiene poco tamaño o un tamaño inferior",
+      "muestra": "Vida",
+      "ecos": [
+        "Germinar",
+        "Muerte",
+        "Wall-e",
+        "Eva"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 79,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "significa que un espacio o recipiente está ocupado por completo o hasta su límite.",
+      "ejemplo_selector_2": "ausencia total o parcial de materia en un determinado espacio o la falta de contenido en el interior de un recipiente",
+      "muestra": "Vender",
+      "ecos": [
+        "Producto",
+        "Comprar",
+        "Precio",
+        "Dinero"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 80,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "que no esta sujeto, amarrado o unido a algo y puede moverse con facilidad",
+      "ejemplo_selector_2": "que esta sujeto con fuerza o tiene  poco espacio para moverse",
+      "muestra": "Feliz",
+      "ecos": [
+        "Sorprendido",
+        "Incómodo",
+        "Asustado",
+        "Triste"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 81,
+      "fase": "entrenamiento",
+      "relacion": "opuestos",
+      "ejemplo_selector_1": "color que resulta de la combinacion de todos los coleres de la luz",
+      "ejemplo_selector_2": "color que se percibe cuando hay ausencia o poca presencia de luz",
+      "muestra": "Amarillo",
+      "ecos": [
+        "Sol",
+        "Verde",
+        "Morado",
+        "Blanco"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 82,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "Mecanismo de metal que se fija en puertas y sirve para cerrarlos",
+      "ejemplo_selector_2": "permite activar el mecanismo para abrir o cerrar una cerradura.",
+      "muestra": "Teléfono",
+      "ecos": [
+        "Peluche",
+        "Anillo",
+        "Audífonos",
+        "Cartera"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 84,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "conjunto de perros o cánidos",
+      "ejemplo_selector_2": "mamífero carnívoro de la familia de los cánidos",
+      "muestra": "Cardumen",
+      "ecos": [
+        "Medusa",
+        "Granja",
+        "oveja",
+        "Pez"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 85,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "grupo de ovejas que permanecen juntas y son cuidadas y pastoreadas",
+      "ejemplo_selector_2": "animal domestico, cubierto de lana y vive comunmente en rebaños",
+      "muestra": "Gente",
+      "ecos": [
+        "Persona",
+        "Sociedad",
+        "Comunidad",
+        "Organización"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 86,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "abertura en una pared que permite la entrada de luz y aire y puede tener vidrio",
+      "ejemplo_selector_2": "construccion formada por varios espacios o pisos destinada a vivienda, trabajo u otras actividades",
+      "muestra": "Cráter",
+      "ecos": [
+        "Volcán",
+        "Montaña",
+        "Agujero",
+        "Fuego"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 87,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "aparato utilizado para cocinar alimentos mediante una fuente de calor",
+      "ejemplo_selector_2": "lugar de la casa donde se preparan y cocinan los alimentos",
+      "muestra": "Chimenea",
+      "ecos": [
+        "Casa",
+        "Balcón",
+        "Tapete",
+        "Leña"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 88,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "espacio donde se cultivan plantas, flores, arboles o pasto",
+      "ejemplo_selector_2": "planta de tallo leñoso y ramas que generalmente crece a cierta altura",
+      "muestra": "Iglesia",
+      "ecos": [
+        "Cura",
+        "Campanario",
+        "Biblia",
+        "Estacionamiento"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 89,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "persona que trabaja en la construccion y reparacion de casas, muros y otras estructuras",
+      "ejemplo_selector_2": "actividad de construir edificios, casas, muros u otras estructuras",
+      "muestra": "Compositor",
+      "ecos": [
+        "Banda",
+        "Escenario",
+        "Actor",
+        "Música"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 90,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "animal domestico de pelaje suave, perteneciente a la familia de los felinos",
+      "ejemplo_selector_2": "animal mamifero que pertenecen a la familia de los gatos, leones o tigres",
+      "muestra": "Lobo",
+      "ecos": [
+        "Perro",
+        "Canino",
+        "Carnívoro",
+        "Cuadrúpedo"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 91,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "ejemplo_selector_1": "masas de pequeñas gotas de agua o critales de hielo que se encuentran en la atmosfera",
+      "ejemplo_selector_2": "espacio que se observa sobre la superficie de la Tierra, donde se encuentran las nubes, el sol, la luna y las estrellas",
+      "muestra": "Estrellas",
+      "ecos": [
+        "Luna",
+        "Nebulosa",
+        "Universo",
+        "Planeta"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 2,
+      "fase": "postprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "poblar",
+      "ejemplo_selector_2": "habitar",
+      "muestra": "proliferación",
+      "ecos": [
+        "descuido",
+        "exuberancia",
+        "exageración",
+        "declaración"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 3,
+      "fase": "postprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "avatar",
+      "ejemplo_selector_2": "cambio",
+      "muestra": "recóndito",
+      "ecos": [
+        "confuso",
+        "profundo",
+        "retorcido",
+        "prohibido"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 4,
+      "fase": "postprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "vigilar",
+      "ejemplo_selector_2": "defender",
+      "muestra": "inflexible",
+      "ecos": [
+        "suave",
+        "impenetrable",
+        "vacío",
+        "rigido"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 5,
+      "fase": "postprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "inhibir",
+      "ejemplo_selector_2": "reprimir",
+      "muestra": "tragedia",
+      "ecos": [
+        "débil",
+        "cambio",
+        "desastre",
+        "justo"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 6,
+      "fase": "postprueba",
+      "relacion": "Semejantes",
+      "ejemplo_selector_1": "concurrir",
+      "ejemplo_selector_2": "asistir",
+      "muestra": "pugna",
+      "ecos": [
+        "resuelve",
+        "batallar",
+        "retiene",
+        "deteriora"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 7,
+      "fase": "postprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "intimidados",
+      "ejemplo_selector_2": "envalentonados",
+      "muestra": "interino",
+      "ecos": [
+        "fijo",
+        "provisional",
+        "transitorio",
+        "paseante"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 8,
+      "fase": "postprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "sofisticado",
+      "ejemplo_selector_2": "simple",
+      "muestra": "afluencia",
+      "ecos": [
+        "exuberancia",
+        "abundancia",
+        "demasía",
+        "escacez"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 9,
+      "fase": "postprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "excepcional",
+      "ejemplo_selector_2": "ordinario",
+      "muestra": "guardar",
+      "ecos": [
+        "poner",
+        "descologar",
+        "cuidar",
+        "morado"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 10,
+      "fase": "postprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "atender",
+      "ejemplo_selector_2": "ignorar",
+      "muestra": "cambiar",
+      "ecos": [
+        "mover",
+        "sostener",
+        "mantener",
+        "mirar"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 11,
+      "fase": "postprueba",
+      "relacion": "Opuestos",
+      "ejemplo_selector_1": "incluir",
+      "ejemplo_selector_2": "excluir",
+      "muestra": "desalentar",
+      "ecos": [
+        "exacerbar",
+        "excitar",
+        "recular",
+        "acrecentar"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 12,
+      "fase": "postprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "filosofía",
+      "ejemplo_selector_2": "ciencia",
+      "muestra": "tren",
+      "ecos": [
+        "obsidiana",
+        "vía",
+        "metal",
+        "cielo"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 13,
+      "fase": "postprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "cráter",
+      "ejemplo_selector_2": "volcán",
+      "muestra": "avaricia",
+      "ecos": [
+        "lava",
+        "pecado",
+        "dormir",
+        "agua"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 14,
+      "fase": "postprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "jauría",
+      "ejemplo_selector_2": "perros",
+      "muestra": "rebaño",
+      "ecos": [
+        "llanta",
+        "manta",
+        "ovejas",
+        "hilo"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 15,
+      "fase": "postprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "libro",
+      "ejemplo_selector_2": "hojas",
+      "muestra": "soldados",
+      "ecos": [
+        "regimiento",
+        "verde",
+        "carro",
+        "sueño"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 16,
+      "fase": "postprueba",
+      "relacion": "Inclusión",
+      "ejemplo_selector_1": "cable",
+      "ejemplo_selector_2": "electricidad",
+      "muestra": "honestidad",
+      "ecos": [
+        "choque",
+        "valor",
+        "usual",
+        "comer"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 17,
+      "fase": "postprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "taza",
+      "ejemplo_selector_2": "llanta",
+      "muestra": "agua",
+      "ecos": [
+        "vaso",
+        "botella",
+        "TV",
+        "garrafón"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 18,
+      "fase": "postprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "ventana",
+      "ejemplo_selector_2": "crema",
+      "muestra": "ojo",
+      "ecos": [
+        "córnea",
+        "pupila",
+        "almohada",
+        "iris"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 19,
+      "fase": "postprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "cabello",
+      "ejemplo_selector_2": "huevo",
+      "muestra": "baño",
+      "ecos": [
+        "regadera",
+        "avena",
+        "jabón",
+        "tina"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 20,
+      "fase": "postprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "vestido",
+      "ejemplo_selector_2": "tabique",
+      "muestra": "música",
+      "ecos": [
+        "sillón",
+        "disco",
+        "audífonos",
+        "nota musical"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 21,
+      "fase": "postprueba",
+      "relacion": "Exclusión",
+      "ejemplo_selector_1": "cable",
+      "ejemplo_selector_2": "perro",
+      "muestra": "tenis",
+      "ecos": [
+        "pie",
+        "agujetas",
+        "calceta",
+        "cabeza"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 22,
+      "fase": "postprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "terracota",
+      "ejemplo_selector_2": "café",
+      "muestra": "rojo",
+      "ecos": [
+        "azul",
+        "verde",
+        "granate",
+        "morado"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 23,
+      "fase": "postprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "rosa",
+      "ejemplo_selector_2": "fiusha",
+      "muestra": "azul",
+      "ecos": [
+        "café",
+        "rosa",
+        "negro",
+        "azul marino"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 24,
+      "fase": "postprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "guinda",
+      "ejemplo_selector_2": "rojo",
+      "muestra": "violeta",
+      "ecos": [
+        "lavanda",
+        "blanco",
+        "verde",
+        "amarillo"
+      ],
+      "indice_correcto": 0
+    },
+    {
+      "fila_excel": 25,
+      "fase": "postprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "verde",
+      "ejemplo_selector_2": "esmeralda",
+      "muestra": "crema",
+      "ecos": [
+        "turquesa",
+        "maíz",
+        "plateado",
+        "negro"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 26,
+      "fase": "postprueba",
+      "relacion": "Color",
+      "ejemplo_selector_1": "índigo",
+      "ejemplo_selector_2": "violeta",
+      "muestra": "melón",
+      "ecos": [
+        "magenta",
+        "dorado",
+        "terracota",
+        "salmón"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 27,
+      "fase": "postprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "cereza",
+      "ejemplo_selector_2": "canica",
+      "muestra": "llanta",
+      "ecos": [
+        "lentes",
+        "pizza",
+        "almohada",
+        "toalla"
+      ],
+      "indice_correcto": 1
+    },
+    {
+      "fila_excel": 28,
+      "fase": "postprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "tabique",
+      "ejemplo_selector_2": "caja de tenis",
+      "muestra": "cigarro",
+      "ecos": [
+        "paracaídas",
+        "tenedor",
+        "crayola",
+        "jirafa"
+      ],
+      "indice_correcto": 2
+    },
+    {
+      "fila_excel": 29,
+      "fase": "postprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "taza",
+      "ejemplo_selector_2": "lapicero",
+      "muestra": "tenis",
+      "ecos": [
+        "camión",
+        "sillón",
+        "elefante",
+        "bolillo"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 30,
+      "fase": "postprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "labial",
+      "ejemplo_selector_2": "encendedor",
+      "muestra": "lata",
+      "ecos": [
+        "piscina",
+        "árbol",
+        "tinaco",
+        "vaso"
+      ],
+      "indice_correcto": 3
+    },
+    {
+      "fila_excel": 31,
+      "fase": "postprueba",
+      "relacion": "Tamaño",
+      "ejemplo_selector_1": "manzana",
+      "ejemplo_selector_2": "naranja",
+      "muestra": "moneda",
+      "ecos": [
+        "corcholata",
+        "avión",
+        "zapato",
+        "demoledora"
+      ],
+      "indice_correcto": 0
+    }
+  ],
+  "omitidos": [
+    {
+      "fila_excel": 2,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 3,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 4,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 5,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 6,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 7,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 8,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 9,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 10,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 11,
+      "fase": "entrenamiento",
+      "relacion": "semejantes ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 12,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 13,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 14,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 15,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 16,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 17,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 18,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 19,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 20,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 21,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 22,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 23,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 24,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 25,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 26,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 27,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 28,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 29,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 30,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 31,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "faltan datos (muestra o ecos vacíos)"
+    },
+    {
+      "fila_excel": 73,
+      "fase": "entrenamiento",
+      "relacion": "opuestos ",
+      "motivo": "no se pudo determinar respuesta correcta (verde ausente y J='Fuego ' no coincide con ningún Eco)"
+    },
+    {
+      "fila_excel": 83,
+      "fase": "entrenamiento",
+      "relacion": "inclusion",
+      "motivo": "no se pudo determinar respuesta correcta (verde ausente y J='Salones' no coincide con ningún Eco)"
+    }
+  ]
+}
