@@ -5,11 +5,6 @@ import { generarPlanFase, posicionCorrectaTrasBarajar } from "../aleatorizacion.
 export const router = express.Router();
 
 const FASES_VALIDAS = ["preprueba", "entrenamiento", "postprueba"];
-const SIGUIENTE_FASE = {
-  preprueba: "entrenamiento",
-  entrenamiento: "postprueba",
-  postprueba: "finalizado",
-};
 
 function validarFase(fase, res) {
   if (!FASES_VALIDAS.includes(fase)) {
@@ -47,12 +42,21 @@ router.post("/:fase/iniciar", async (req, res) => {
       return res.json({ sesion: existente, reanudada: true });
     }
 
-    // traer items activos de esta fase
-    const { data: items, error: errItems } = await supabase
-      .from("items")
-      .select("id")
-      .eq("fase", fase)
-      .eq("activo", true);
+    // traer al participante para saber su grupo de entrenamiento asignado
+    const { data: participante, error: errPart } = await supabase
+      .from("participantes")
+      .select("grupo_entrenamiento")
+      .eq("id", participanteId)
+      .single();
+
+    if (errPart) throw errPart;
+
+    // traer items activos de esta fase. En Entrenamiento, SOLO los de su grupo asignado.
+    let consultaItems = supabase.from("items").select("id").eq("fase", fase).eq("activo", true);
+    if (fase === "entrenamiento") {
+      consultaItems = consultaItems.eq("grupo_entrenamiento", participante.grupo_entrenamiento);
+    }
+    const { data: items, error: errItems } = await consultaItems;
 
     if (errItems) throw errItems;
     if (!items || items.length === 0) {
@@ -143,11 +147,15 @@ router.get("/:fase/siguiente-item", async (req, res) => {
       totalEnFase: orden_items.length,
       item: {
         id: item.id,
+        tipoContenido: item.tipo_contenido, // "texto" | "imagen" - el frontend decide cómo renderizar
         relacion: item.relacion,
         ejemploSelector1: item.ejemplo_selector_1,
         ejemploSelector2: item.ejemplo_selector_2,
         muestra: item.muestra,
         ecos: ecosParaMostrar, // ya en el orden que le toca ver a este participante
+        // cuando tipoContenido === "imagen", estos campos son NOMBRES DE ARCHIVO
+        // (ej. "concepto05_muestra.jpg") dentro de /assets/entrenamiento-imagenes/,
+        // no URLs completas; el frontend arma la ruta final.
         // NUNCA se envía indice_correcto aquí
       },
     });
@@ -225,13 +233,22 @@ router.post("/:fase/responder", async (req, res) => {
 
     await supabase.from("sesiones_fase").update(actualizacion).eq("id", sesion.id);
 
-    // si la fase terminó, actualizar participante (avanzar de fase o marcar completado)
+    // si la fase terminó, marcar su bandera de "completada" (para el menú
+    // con desbloqueo progresivo) y, si ya no quedan fases, marcar al
+    // participante como completado en general.
     if (faseTerminada) {
-      const siguienteFase = SIGUIENTE_FASE[fase];
-      const actualizacionParticipante =
-        siguienteFase === "finalizado"
-          ? { estado: "completado", fase_actual: "finalizado" }
-          : { fase_actual: siguienteFase };
+      const CAMPO_COMPLETADA = {
+        preprueba: "preprueba_completada",
+        entrenamiento: "entrenamiento_completado",
+        postprueba: "postprueba_completada",
+      };
+
+      const actualizacionParticipante = { [CAMPO_COMPLETADA[fase]]: true };
+
+      if (fase === "postprueba") {
+        actualizacionParticipante.estado = "completado";
+        actualizacionParticipante.fase_actual = "finalizado";
+      }
 
       await supabase
         .from("participantes")
