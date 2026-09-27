@@ -25,6 +25,11 @@ export async function obtenerParticipantePorCodigo(codigo) {
   return manejarRespuesta(res);
 }
 
+export async function obtenerProgreso(participanteId) {
+  const res = await fetch(`${API_URL}/participantes/${participanteId}/progreso`);
+  return manejarRespuesta(res);
+}
+
 export async function iniciarFase(fase, participanteId) {
   const res = await fetch(`${API_URL}/fases/${fase}/iniciar`, {
     method: "POST",
@@ -62,5 +67,10 @@ export async function obtenerDesgloseGeneralAdmin() {
 
 export async function obtenerDetalleParticipanteAdmin(id) {
   const res = await fetch(`${API_URL}/admin/participantes/${id}/detalle`);
+  return manejarRespuesta(res);
+}
+
+export async function obtenerComparacionGruposAdmin() {
+  const res = await fetch(`${API_URL}/admin/comparacion-grupos`);
   return manejarRespuesta(res);
 }
