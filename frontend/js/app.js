@@ -253,7 +253,6 @@ function pantallaEjemplo() {
   render(`
     <div class="tarjeta">
       ${barraProgresoHtml()}
-      <p class="etiqueta-ejemplo">Ejemplo de la relación "${item.relacion}"</p>
       <div class="par-ejemplo">
         <span class="chip">${contenidoHtml(item.ejemploSelector1, "ejemplo 1")}</span>
         <span class="conector">↔</span>
@@ -280,7 +279,6 @@ function pantallaPregunta() {
   render(`
     <div class="tarjeta">
       ${barraProgresoHtml()}
-      <p class="etiqueta-muestra">Muestra</p>
       <div class="texto-muestra">${contenidoHtml(item.muestra, "muestra")}</div>
       <div class="grid-opciones">
         ${opcionesHtml}
