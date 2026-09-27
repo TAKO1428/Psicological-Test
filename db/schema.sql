@@ -12,6 +12,12 @@
 CREATE TABLE items (
     id              SERIAL PRIMARY KEY,
     fase            TEXT NOT NULL CHECK (fase IN ('preprueba', 'entrenamiento', 'postprueba')),
+    -- grupo_entrenamiento: solo aplica cuando fase = 'entrenamiento'. Es la
+    -- modalidad que se está comparando (imágenes / palabra suelta / definición).
+    grupo_entrenamiento TEXT CHECK (grupo_entrenamiento IN ('imagenes', 'palabra', 'definicion')),
+    -- tipo_contenido: 'texto' (muestra/ecos son texto plano) o 'imagen'
+    -- (muestra/ecos son nombres de archivo dentro de frontend/assets/entrenamiento-imagenes/)
+    tipo_contenido  TEXT NOT NULL DEFAULT 'texto' CHECK (tipo_contenido IN ('texto', 'imagen')),
     fila_excel      INTEGER,                 -- trazabilidad al excel original
     relacion        TEXT NOT NULL,           -- Semejantes, Opuestos, Inclusión, Exclusión, Color, Tamaño
     ejemplo_selector_1 TEXT,
@@ -23,10 +29,16 @@ CREATE TABLE items (
     eco_4           TEXT NOT NULL,
     indice_correcto SMALLINT NOT NULL CHECK (indice_correcto BETWEEN 0 AND 3),
     activo          BOOLEAN NOT NULL DEFAULT TRUE,  -- permite desactivar un item sin borrarlo
-    creado_en       TIMESTAMPTZ NOT NULL DEFAULT now()
+    creado_en       TIMESTAMPTZ NOT NULL DEFAULT now(),
+    -- un item de entrenamiento SIEMPRE debe declarar su grupo/modalidad
+    CONSTRAINT grupo_requerido_en_entrenamiento CHECK (
+        (fase = 'entrenamiento' AND grupo_entrenamiento IS NOT NULL)
+        OR (fase <> 'entrenamiento' AND grupo_entrenamiento IS NULL)
+    )
 );
 
 CREATE INDEX idx_items_fase ON items(fase) WHERE activo = TRUE;
+CREATE INDEX idx_items_grupo ON items(grupo_entrenamiento) WHERE activo = TRUE;
 
 -- ------------------------------------------------------------
 -- PARTICIPANTES: una fila por persona que hace el estudio
@@ -34,15 +46,24 @@ CREATE INDEX idx_items_fase ON items(fase) WHERE activo = TRUE;
 CREATE TABLE participantes (
     id                  SERIAL PRIMARY KEY,
     codigo_encuestado   TEXT NOT NULL UNIQUE,   -- ej. "ENC-0001", generado por el servidor
+    -- grupo de entrenamiento asignado a este participante (round-robin, ver
+    -- codigoEncuestado.js / asignarGrupoBalanceado). Fijo desde el registro.
+    grupo_entrenamiento TEXT NOT NULL CHECK (grupo_entrenamiento IN ('imagenes', 'palabra', 'definicion')),
     -- token de sesión/dispositivo para detectar reingresos accidentales, NO es autenticación real
     token_dispositivo   TEXT,
     estado              TEXT NOT NULL DEFAULT 'no_iniciado'
                          CHECK (estado IN ('no_iniciado','en_curso','completado','abandonado')),
     fase_actual         TEXT CHECK (fase_actual IN ('preprueba','entrenamiento','postprueba','finalizado')),
+    -- progreso de cada fase, para el menú con desbloqueo progresivo
+    preprueba_completada     BOOLEAN NOT NULL DEFAULT FALSE,
+    entrenamiento_completado BOOLEAN NOT NULL DEFAULT FALSE,
+    postprueba_completada    BOOLEAN NOT NULL DEFAULT FALSE,
     consentimiento_aceptado BOOLEAN NOT NULL DEFAULT FALSE,
     creado_en           TIMESTAMPTZ NOT NULL DEFAULT now(),
     actualizado_en      TIMESTAMPTZ NOT NULL DEFAULT now()
 );
+
+CREATE INDEX idx_participantes_grupo ON participantes(grupo_entrenamiento);
 
 -- ------------------------------------------------------------
 -- SESIONES DE FASE: el orden aleatorizado de items, fijado una vez
@@ -109,6 +130,7 @@ CREATE VIEW resumen_participante_fase AS
 SELECT
     p.id AS participante_id,
     p.codigo_encuestado,
+    p.grupo_entrenamiento,
     e.fase,
     COUNT(*) AS total_respondidas,
     COUNT(*) FILTER (WHERE e.correcto) AS total_correctas,
@@ -119,7 +141,7 @@ SELECT
 FROM ensayos e
 JOIN participantes p ON p.id = e.participante_id
 WHERE e.respondido_en IS NOT NULL
-GROUP BY p.id, p.codigo_encuestado, e.fase;
+GROUP BY p.id, p.codigo_encuestado, p.grupo_entrenamiento, e.fase;
 
 -- ------------------------------------------------------------
 -- Vista de conveniencia: qué tan difícil es cada item (para detectar
@@ -129,8 +151,10 @@ CREATE VIEW resumen_item AS
 SELECT
     i.id AS item_id,
     i.fase,
+    i.grupo_entrenamiento,
     i.relacion,
     i.muestra,
+    i.tipo_contenido,
     COUNT(e.id) AS veces_presentado,
     COUNT(e.id) FILTER (WHERE e.correcto) AS veces_correcto,
     ROUND(
@@ -138,4 +162,45 @@ SELECT
     ) AS porcentaje_acierto
 FROM items i
 LEFT JOIN ensayos e ON e.item_id = i.id AND e.respondido_en IS NOT NULL
-GROUP BY i.id, i.fase, i.relacion, i.muestra;
+GROUP BY i.id, i.fase, i.grupo_entrenamiento, i.relacion, i.muestra, i.tipo_contenido;
+
+-- ------------------------------------------------------------
+-- Vista clave para el OBJETIVO del estudio: comparar pre->post
+-- por participante, junto con el grupo de entrenamiento que le tocó.
+-- Cada fila = un participante con su % de pre, % de post y la ganancia.
+-- ------------------------------------------------------------
+CREATE VIEW ganancia_por_participante AS
+SELECT
+    p.id AS participante_id,
+    p.codigo_encuestado,
+    p.grupo_entrenamiento,
+    p.estado,
+    pre.porcentaje_correcto AS porcentaje_pre,
+    post.porcentaje_correcto AS porcentaje_post,
+    ent.porcentaje_correcto AS porcentaje_entrenamiento,
+    (post.porcentaje_correcto - pre.porcentaje_correcto) AS ganancia_pre_post
+FROM participantes p
+LEFT JOIN resumen_participante_fase pre
+       ON pre.participante_id = p.id AND pre.fase = 'preprueba'
+LEFT JOIN resumen_participante_fase ent
+       ON ent.participante_id = p.id AND ent.fase = 'entrenamiento'
+LEFT JOIN resumen_participante_fase post
+       ON post.participante_id = p.id AND post.fase = 'postprueba';
+
+-- ------------------------------------------------------------
+-- Vista principal para responder "qué entrenamiento funciona mejor":
+-- agrega la ganancia pre->post PROMEDIO por grupo de entrenamiento,
+-- solo considerando participantes que ya tienen pre Y post registradas.
+-- ------------------------------------------------------------
+CREATE VIEW comparacion_grupos_entrenamiento AS
+SELECT
+    grupo_entrenamiento,
+    COUNT(*) AS n_participantes,
+    COUNT(*) FILTER (WHERE ganancia_pre_post IS NOT NULL) AS n_con_pre_y_post,
+    ROUND(AVG(porcentaje_pre), 1) AS promedio_pre,
+    ROUND(AVG(porcentaje_entrenamiento), 1) AS promedio_entrenamiento,
+    ROUND(AVG(porcentaje_post), 1) AS promedio_post,
+    ROUND(AVG(ganancia_pre_post), 1) AS ganancia_promedio,
+    ROUND(STDDEV(ganancia_pre_post), 1) AS ganancia_desviacion
+FROM ganancia_por_participante
+GROUP BY grupo_entrenamiento;
