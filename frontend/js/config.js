@@ -10,5 +10,5 @@ export const RUTA_IMAGENES = "./assets/entrenamiento-imagenes/";
 // Memes de feedback mostrados SOLO durante Entrenamiento al responder.
 // Sube tus propios archivos con estos nombres exactos para reemplazarlos.
 export const RUTA_MEMES = "./assets/memes/";
-export const MEME_CORRECTO = "correcto.png";
-export const MEME_INCORRECTO = "incorrecto.png";
+export const MEME_CORRECTO = "correcto.jpg";
+export const MEME_INCORRECTO = "incorrecto.jpg";
