@@ -195,7 +195,7 @@ function renderMenuPrincipal() {
       <div class="tarjetas-fase">
         ${tarjetasHtml}
       </div>
-      ${todoCompletado ? `<p style="text-align:center; margin-top:20px;">🎉 Completaste el estudio. ¡Gracias por participar!</p>` : ""}
+      ${todoCompletado ? `<p style="text-align:center; margin-top:20px;">Completaste el estudio :D. ¡Gracias por participar!</p>` : ""}
     </div>
   `);
 
